@@ -1,58 +1,59 @@
-# Traffic Management Software
+# 📧 Bulk Email Sender
 
-Traffic Management Software is a real-time traffic monitoring and visualization project created by **Bhavya Paliwal**.  
-This project focuses on displaying congestion, queue backlog, delay analysis, and route visualization using intuitive UI components.
+A web-based Bulk Email Sender application built using Flask and SMTP that allows users to send emails to multiple recipients at once.
 
----
+## 🚀 Features
 
-## 🚦 Features
+- Send emails to multiple recipients
+- Simple and user-friendly interface
+- Gmail SMTP integration
+- Secure authentication using App Passwords
+- Fast bulk email delivery
 
-- Real-time traffic congestion visualization  
-- Queue backlog detection  
-- Delay estimation panel  
-- Clean and interactive UI  
-- Modern responsive layout  
-- Data-driven dashboard components  
+## 🛠️ Tech Stack
 
----
+### Frontend
+- HTML
+- CSS
 
-## 💡 Project Objectives
+### Backend
+- Python
+- Flask
 
-- Analyze traffic density and flow patterns  
-- Provide easy-to-understand visualization for road users  
-- Explore real-time data concepts  
-- Improve decision-making using visual insights  
+### Email Service
+- SMTP
+- Gmail App Password Authentication
 
----
+## 📂 Project Structure
 
-## 🛠 Tech Stack Used
-- Category             | Technologies |
-- ---------------------|--------------|
-- **Machine Learning** | Python, NumPy, Pandas, Matplotlib |
-- **Algorithms**       | Regression / Classification |
-- **Database**         | MySQL (optional) |
-- **Core Concepts**    | Data Cleaning, Feature Engineering, Model Evaluation |
+```text
+BulkEmailSender/
+│
+├── app.py
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css
+└── README.md
+```
 
----
+## ⚙️ How It Works
 
+1. User enters Gmail address and App Password.
+2. Adds recipient email addresses.
+3. Writes email subject and message.
+4. Application connects to Gmail SMTP server.
+5. Emails are delivered to all recipients.
 
-## 👩‍💻 Author
+## 🔒 Security
 
-**Bhavya Paliwal**  
-B.Tech AI & DS | Aspiring Software Engineer  
-GitHub: https://github.com/Bhavya-Paliwal22  
-LinkedIn: https://www.linkedin.com/in/bhavya-paliwal-13a897354/
+- Uses Gmail App Password instead of normal Gmail password.
+- SMTP connection secured using TLS encryption.
 
----
+## 🎯 Learning Outcomes
 
-## ⭐ Future Scope
-
-- Live GPS map integration  
-- Predictive congestion analysis  
-- Machine learning-based traffic forecasting  
-- Admin dashboard  
-
-
-📍 Project Status
-
-This project is under development and will be improved as I learn more advanced ML and real-time data processing techniques.
+- Flask Routing
+- Form Handling
+- SMTP Integration
+- Email Automation
+- Web Application Development

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulk Email Sender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Bulk Email Sender</h1>
+
+    <form action="/send" method="POST">
+
+        <label>Sender Gmail</label>
+        <input type="email" name="sender_email" required>
+
+        <label>App Password</label>
+        <input type="password" name="app_password" required>
+
+        <label>Recipient Emails (comma separated)</label>
+        <textarea name="recipients" rows="4" required></textarea>
+
+        <label>Subject</label>
+        <input type="text" name="subject" required>
+
+        <label>Message</label>
+        <textarea name="message" rows="8" required></textarea>
+
+        <button type="submit">Send Emails</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
